@@ -1,10 +1,10 @@
-⚡ Apache Kafka Project
+# ⚡ Apache Kafka Project
 
 This repository contains an implementation of Apache Kafka, a distributed event streaming platform used for building real-time data pipelines and event-driven applications.
 
 
 
-🚀 Features
+## 🚀 Features
 
 🔄 Publish-subscribe messaging
 
@@ -14,7 +14,7 @@ This repository contains an implementation of Apache Kafka, a distributed event 
 
 🏎️ Scalable architecture
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 
 Messaging System: Apache Kafka
 
@@ -24,7 +24,7 @@ Broker Setup: Zookeeper + Kafka Brokers
 
 Data Processing: Kafka Streams / Spark Streaming (if applicable)
 
-📁 Project Structure
+## 📁 Project Structure
 
 
 /Kafka
@@ -41,9 +41,9 @@ Data Processing: Kafka Streams / Spark Streaming (if applicable)
 
 │── README.md         # Documentation
 
-🚀 Installation & Setup
+## 🚀 Installation & Setup
 
-1️⃣ Install Kafka (Local Setup)
+### 1️⃣ Install Kafka (Local Setup)
 
 Download and extract Kafka
 
@@ -66,12 +66,12 @@ bin/zookeeper-server-start.sh config/zookeeper.properties
 
 bin/kafka-server-start.sh config/server.properties
 
-2️⃣ Create Kafka Topics
+### 2️⃣ Create Kafka Topics
 
 
 bin/kafka-topics.sh --create --topic test-topic --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
 
-3️⃣ Start Producer & Consumer
+### 3️⃣ Start Producer & Consumer
 
 Producer (Publishing Messages):
 
@@ -88,11 +88,11 @@ Consumer (Listening to Messages):
 
 bin/kafka-console-consumer.sh --topic test-topic --from-beginning --bootstrap-server localhost:9092
 
-🛠 Running with Docker (If Used)
+## 🛠 Running with Docker (If Used)
 
 docker-compose up -d
 
-📌 Contributing
+## 📌 Contributing
 
 Contributions are welcome! Feel free to:
 
